@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace DataStructures
@@ -19,8 +20,9 @@ namespace DataStructures
     }
     public List<string> EmptyStack()
     {
-      var firstItem = stackList[0];
-      stackList.Remove(firstItem);
+      
+      var lastItem = stackList[stackList.Count() - 1];
+      stackList.Remove(lastItem);
       return stackList;
     }
     public List<string> GetStack()
