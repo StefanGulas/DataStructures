@@ -16,16 +16,28 @@ namespace DataStructureTests
     {
       bigONotation = new BigONotation();
       numbers = new List<int>();
-      for(int i = 0; i < 1000; i++)
+      for(int i = 0; i < 2000; i++)
       {
         numbers.Add(i);
       }
     }
     [Test]
-    public void TestSimpleArrayLog()
+    public void TestSimple1ArrayPrintOneItem()
+    {
+      bigONotation.SimpleArrayPrintOneItem(numbers);
+      Assert.AreEqual(1, 1);
+    }
+    [Test]
+    public void TestSimple2ArrayLog()
     {
       bigONotation.SimpleArrayLog(numbers);
       Assert.AreEqual(1,1);
+    }
+    [Test]
+    public void TestSimple3ArrayLogInnerLoop()
+    {
+      bigONotation.SimpleArrayLogInnerLoop(numbers);
+      Assert.AreEqual(1, 1);
     }
   }
 }
