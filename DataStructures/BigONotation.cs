@@ -32,5 +32,21 @@ namespace DataStructures
         }
       }
     }
+    public void SimpleArrayLogTwoInnerLoops(List<int> numbers)
+    {
+      // O(n^3)
+      for (int i = 0; i < numbers.Count; i++)
+      {
+        for (int j = 0; j < numbers.Count; j++)
+        {
+          for (int k = 0; k < numbers.Count; k++)
+          {
+            Console.WriteLine(numbers[i]);
+
+          }
+          
+        }
+      }
+    }
   }
 }

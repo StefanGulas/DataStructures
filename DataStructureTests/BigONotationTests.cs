@@ -16,7 +16,7 @@ namespace DataStructureTests
     {
       bigONotation = new BigONotation();
       numbers = new List<int>();
-      for(int i = 0; i < 2000; i++)
+      for(int i = 0; i < 200; i++)
       {
         numbers.Add(i);
       }
@@ -37,6 +37,12 @@ namespace DataStructureTests
     public void TestSimple3ArrayLogInnerLoop()
     {
       bigONotation.SimpleArrayLogInnerLoop(numbers);
+      Assert.AreEqual(1, 1);
+    }
+    [Test]
+    public void TestSimple3ArrayLogTwoInnerLoops()
+    {
+      bigONotation.SimpleArrayLogTwoInnerLoops(numbers);
       Assert.AreEqual(1, 1);
     }
   }
