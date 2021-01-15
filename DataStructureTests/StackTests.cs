@@ -1,10 +1,11 @@
-using NUnit.Framework;
-using DataStructures;
 using System.Collections.Generic;
 using System.Linq;
+using DataStructures;
+using NUnit.Framework;
 
 namespace DataStructureTests
 {
+  [TestFixture]
   public class StackTests
   {
     private StackNew stackNew;
@@ -34,7 +35,7 @@ namespace DataStructureTests
     {
       var expectedStack = new List<string>();
       expectedStack.Add("firstItem");
-      
+
       var actualStack = stackNew.EmptyStack();
       Assert.IsTrue(actualStack.SequenceEqual(expectedStack));
     }

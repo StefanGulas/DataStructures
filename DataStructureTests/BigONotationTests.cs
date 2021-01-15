@@ -6,6 +6,7 @@ using NUnit.Framework;
 
 namespace DataStructureTests
 {
+  [TestFixture]
   public class BigONotationTests
   {
     public BigONotation bigONotation { get; set; }
